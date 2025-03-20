@@ -1,0 +1,8 @@
+➢ Open QGIS. Click on Plugins → Manage and Install Plugins.... 
+➢ To enable a plugin, check on the checkbox next to Plugin. This will enable the plugin to use it.
+➢ Click on Not Installed or Install from ZIP.
+➢ Once the plugin is downloaded and installed, you will see a confirmation dialog.
+➢ Click on Plugins → <<new Plugin Name>>
+➢ The Plugin if marked Experimental plugin can be installed, from Setting→ check on
+➢ A "new" tab will be added to Plugin Manager Window.
+➢ Click on a plugin name and Click Install.
