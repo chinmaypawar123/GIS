@@ -1,0 +1,92 @@
+➢ Go to Layer → add Layer → add Delimited Text Layer and load “signif.txt” from data file.
+➢ Go to Layer → Add Layer → Add vector Layer and from data folder
+“\GIS_Workshop\Practicals\Practical_08\A\DATA\ne_10m_populated_places_simple.zip” load 
+the layer to the project and remove all rows from attribute table other than India
+➢ Go to Vector→ Analysis tool → Distance Matrix
+➢ Calculate the Distance matrix and perform Nearest Neighbor Analysis 
+➢ Now you will be able to see the content of our results. The InputID field contains the field name 
+from the Earthquake layer. The TargetID field contains the name of the feature from the 
+Populated Places layer that was the closest to the earthquake point. The Distance field is the 
+distance between the 2 points
+
+7. Here select the earthquake layer signif as the Input point layer and the populated 
+places ne_10m_populated_places_simpleas the target layer. You also need to select a unique 
+field from each of these layers which is how your results will be displayed.
+In this analysis, we 
+are looking to get only 1 nearest point, so check the Use only the nearest(k) target points, and 
+enter 1. Name your output file matrix.csv, and click OK. Once the processing finishes, 
+click Close.
+
+8. Once the processing finishes, click the Close button in the Distance Matrix dialog. You can now 
+view the matrix.csv file in Notepad or any text editor. QGIS can import CSV files as well, so 
+we will add it to QGIS and view it there. Go to Layer ‣Add Layer ‣Add Delimited Text 
+Layer....
+
+9. Browse to the newly created matrix.csv file. Since this file is just text columns, select No 
+geometry (attribute only table) as theGeometry definition. Click OK
+
+10. You will see the CSV file loaded as a table. Right-click on the table layer and select Open 
+Attribute Table
+
+11. Now you will be able to see the content of our results. The InputID field contains the field name 
+from the Earthquake layer. The TargetID field contains the name of the feature from the 
+Populated Places layer that was the closest to the earthquake point. The Distance field is the 
+distance between the 2 points
+
+12. This is very close to the result we were looking for. For some users, this table would be 
+sufficient. However, we can also integrate this results in our original Earthquake layer using 
+a Table Join. Right-click on the Earthquake layer, and select Properties
+
+13. Go to the Joins tab and click on the + button.
+
+14. We want to join the data from our analysis result to this layer. We need to select a field from 
+each of the layers that has the same values. Select matrix as the Join layer` and InputID as the Join field.
+The Target field would be I_D. Leave other options to their default values and 
+click OK.
+
+15. You will see the join appear in the Joins tab. Click OK.
+
+16. Now open the attribute table of the signif layer by right-clicking and selecting Open Attribute 
+Table
+
+17. You will see that for every Earthquake feature, we now have an attribute which is the nearest 
+neighbor (closest populated place) and the distance to the nearest neighbor
+
+18. We will now explore a way to visualize these results. First, we need to make the table join 
+permanent by saving it to a new layer. Right-click the signif layer and select Save As...
+
+19. Click the Browse button next to Save as label and name the output layer 
+as earthquake_with_places.shp. Make sure the Add saved file to map box is checked and 
+click OK
+
+20. Once the new layer is loaded, you can turn off the visibility of the signif layer. As our dataset is 
+quite large, we can run our visualization analysis on a subset of the data. QGIS has a neat 
+feature where you can load a subset of features from a layer without having to export it to a new 
+layer. Right-click the earthquake_with_places layer and select Properties
+
+21. In the General tab, scroll down to the Feature subset section. Click Query Builder.
+
+22. For this tutorial, we will visualize the earthquakes and their nearest populated places for 
+Mexico. Enter the following expression in the Query Builder dialog
+
+23. You will see that only the points falling within Mexico will be visible in the canvas. Let’s do 
+the same for the populated places layer. Right-click on 
+the ne_10m_populated_places_simple layer and select Properties
+
+24. Open the Query Builder dialog from the General tab. Enter the following expression.
+
+Once you 
+have the plugin installed, go to MMQGIS ‣Create ‣Hub Lines.
+
+26. Select ne_10m_populated_places_simple as the Hub Point Layer and name as the Hub ID 
+Attribute. Similarly, selectearthquake_with_places as the Spoke Point Layer and matrix_Tar as 
+the Spoke Hub ID Attribute. The hub lines algorithm will go through each of earthquake points 
+and create a line that will join it to the populated place which matches the attribute we specified. 
+Click Browse and name the Output Shapefile as earthquake_hub_lines.shp. Click OK to start 
+the processing
+
+27. The processing may take a few minutes. You can see the progress on the bottom-left corner of 
+the QGIS window
+
+28. Once the processing is done, you will see the earthquake_hub_lines layer loaded in QGIS. You 
+can see that each earthquake point now has a line that connects it to the nearest populated place
