@@ -1,0 +1,51 @@
+//a) Adding raster layers
+➢ From menu bar select Layer → Add Layer → Add Raster Layer
+➢ Select Gridded Population of the World (GPW) v3 dataset from Columbia University, 
+Population Density Grid for the entire globe in ASCII format and for the year 1990 and 2000.
+“\GIS_Workshop\Practicals\Practical_02\A\Data\gl_gpwv3_pdens_90_ascii_one\glds90ag60.asc”
+“\GIS_Workshop\Practicals\Practical_02\A\Data\gl_gpwv3_pdens_90_ascii_one\glds00ag60.asc”
+➢ Go to Project → Properties OR Press the Set CRS option on bottom right corner.
+Select WGS 84 EPSG: 4326 
+Press OK
+
+//b) Raster Styling and Analysis
+➢ Select “glds90ag60.asc” Layer form layer Pane → select property OR double click on it
+select symbology
+➢ Press “APPLY”
+➢ Repeat the same for “glds00ag60.asc” Layer
+➢ Go to Raster → Raster Calculator
+➢ Put the expression "glds00ag60@1" - "glds90ag60@1"
+➢ Select the output file location & name 
+Press OK
+➢ Remove the other two layers i.e. glds00ag60.asc and glds90ag60.asc
+➢ Double click on pop_diff layer.
+select symbology
+➢ Set Render Type to “Single band Pseudo color”, Interpolation as Discrete, and remove all 
+classification and add as shown in figure above using + button. After all settings press 
+“OK
+
+//c) Raster Mosaicking and Clipping
+➢ Go to Layer → Add Layer → Add Raster Layer
+➢ Select the following “.tif” raster images for India from data folder.
+FAS_India1.2018349.terra.367.2km.tif
+FAS_India2.2018349.terra.367.2km.tif
+FAS_India3.2018349.terra.367.2km.tif
+FAS_India4.2018349.terra.367.2km.tif
+➢ Press open
+➢ In data source manager | Raster window click Add.
+➢ Go to Raster → Miscellaneous → Merge
+➢ In the Merge dialog window
+➢ Select all layers and Press OK
+➢ In Merge dialog window select a file name and location to save merged images.
+➢ Save the file to “GIS_Workshop/Practicals/Practical_02/C/” location with the name as 
+Merge_Files.tif
+➢ Press Run
+➢ You can now deselect individual layers from layer pane and only keep the merged raster file.
+➢ Go to Layer→ Add Vector Layer → Select 
+\GIS_Workshop\Practicals\Practical_02\C\IndiaAdminBoundry\IND_adm0.shp file.
+➢ From layer properties → select symbology 
+→ select any one of the following
+➢ Go to Raster → Extraction → Clip Raster by Mask Layer
+➢ Select the merge raster image as input and Ind_adm0 as mask layer
+➢ Select a file name and location for clipped raster as /Practical_02/C/Clipped_File.tif.
+➢ Press RUN.
