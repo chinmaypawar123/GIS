@@ -1,0 +1,12 @@
+a) Table joins
+➢ Start a new project 
+➢ Go to Layer → Add Layer → Add new Vector Layer
+“I:\GIS_Workshop\Practicals\Practical_07\A\Data\tl_2013_06_tract.zip
+➢ Go to Layer → Add Layer → Add Delimited Text Layer
+And add I:\GIS_Workshop\Practicals\Practical_07\A\Data\ca_tacts_pop.csv”
+➢ In the layer panel, Right click on “tl_2013_06_tract”, layer and select Properties
+➢ Select the "Joints" option in Properties, and click on "+" button to add new table join.
+➢ In the Add Vector Join window set the following properties and click OK
+➢ After performing join 
+➢ For more clear output, select “tl_2013_06_tact” from Layer Panel, right click and select 
+properties. Go to Symbology and set the following properties
