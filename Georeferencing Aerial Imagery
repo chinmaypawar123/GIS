@@ -1,0 +1,14 @@
+➢ Install plugin OpenStreetMap 
+➢ Go to Web Menu → OpenLayerPlugin → OpenStreetMap→ OpenStreetMap
+➢ Go to Project → Properties → Set CRS to EPSG 3857
+➢ Go to View → Panels → select OSM Place search
+➢ The Gateway of India, Mumbai is located at 18.92°N 72.83°E
+➢ Search Gateway of India in OSM Search Panel
+➢ Zoom in to appropriate level.
+➢ Go to Raster → Georefrencer 
+➢ File → Open Raster 
+➢ Select file “Gateway_Imagery.tif” from project data folder
+➢ Go to Edit → Add Point
+➢ Select control points from map (Indicated in red color).
+➢ Go to Setting → Transformation Setting
+➢ Go to File → Start Georeferencing or Press the button in Georegerencing Window.
