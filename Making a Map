@@ -1,0 +1,23 @@
+➢ Go to Project → New PrintLayout
+➢ Insert a suitable title and press “OK”.
+➢ Select Add Item → Add Map
+p go to ItemProperties → Map1→ Layers 
+Check on Lock Layers and Lock Styles for Layers
+➢ Go to Add Item → Add Picture → Place a picture box at appropriate location.
+➢ Item Properties → Image Rotation
+➢ Add an inset Using Add Item → Add Picture → Select an area to be highlighted on main Map.
+➢ Set a frame for Inset by enabling the check box for Frame. 
+➢ Select the Picture representing main Map from Items pane. 
+➢ In Item Properties → Overviews → using icon add an overview.
+➢ Select the checkbox Draw Overview
+➢ Name the Picture object representing inset (Map1 in our case).
+➢ Add Item → Add Label
+➢ Change the Label text To “Mumbai Map”, Set appropriate font size and color using Item 
+Properties→ Main Properties
+➢ Add Item → Add Legend→ Place the legend indicator at appropriate location.
+➢ Uncheck auto update and use suitable legend indicator label
+➢ Add Item → Add Scale Bar
+➢ Add Item → Add Label→Add a Label using HTML rendering
+➢ A Map can be saved in Image or PDF using Layout → Export as Image / Export as PDF
+➢ Save the Map to a location appropriate location as PDF or Image.
+➢ Open the PDF or Image from location.
