@@ -1,0 +1,24 @@
+➢ Go to Layer ‣ Add Raster→ Select “Christchurch Topo50 map.tif” from project Folder.
+➢ Right-click the Christchurch Topo50 map.tif layer and select Properties. 
+➢ Choose the Pyramids tab. Hold the Ctrl key and select all the resolutions offered in the 
+Resolutions panel
+➢ Click Build pyramids. Then click OK.
+➢ Go to Settings →Options.... Select the Digitizing tab in the Options dialog. 
+➢ Set the Default snap mode to vertex and segment.
+➢ Press OK.
+➢ Go to Layer → Add Layer → Add Spatialite Layer.
+➢ Select the name and location for Spatial database eg: 
+“GIS_Workshop\Practicals\Practical_06\C\MySpatialDataBase.sqlite”.
+➢ Name the Layer as “Digitized_Road
+➢ Set Geometry type as “Line”
+➢ Set CRS EPSG:4167 – NZGD2000
+➢ Add “Name” and “Class” fields using “Add to Fields List”.
+➢ Once the layer is loaded, click the Toggle Editing button to put the layer in editing mode.
+➢ Click the Add feature button. Click on the map canvas to add a new vertex. 
+Add new vertices along the road feature. Once you have digitized a road segment, right-click to 
+end the feature.
+➢ On Layer Panel Right Click on Digitze_Road, Select the Style tab in the Layer Properties 
+dialog
+➢ Select Digitized_Garden layer in Layer Panel and click on Toggle Editing button and 
+then Add Polygon Feature button on Tool bar. 
+➢ Add two gardens to the region by adding polygon
