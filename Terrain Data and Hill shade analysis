@@ -1,0 +1,34 @@
+➢ Go to Layer → Add Raster Layer → select “10n060e_20101117_gmted_mea300.tif”, from 
+Data folder
+➢ Mt. Everest - is located at the coordinates 27.9881° N, 86.9253° E.
+➢ Enter 86.92, 27.98 in the coordinate field, Scale 900000 and Magnifier 100% at the bottom of 
+QGIS.
+➢ Press enter the view port will be centered on Himalaya Region.
+➢ Crop the raster layer only for the region under study.
+➢ Go to Raster → Extraction→ Clip Raster by Extent
+➢ Select the raster layer (if project contains multiple layers).
+➢ Select the clipping area by selecting the option Use Canvas Extends if the visible part of map 
+is to be selected or manually select an area on canvas by using Select Extent on Canvas.
+➢ Select the location and file name for storing clipped raster layer
+➢ Press RUN.
+➢ Deselect the original layer and keep the clipped one.
+➢ The Clipped raster layer is representing altitude are from 103 Meters.
+➢ To derive counter lines from given raster.
+➢ Go to Raster → Extraction→ Contour
+➢ Select the input raster layer name. Set contour interval 100.00 meters, select the output file 
+name & location and check the option to add output file to project after processing.
+➢ Press “RUN”.
+➢ Label the layer using “ELEV” field and set appropriate symbols for line.
+➢ In the Layer panel right click on Contour Raster Layer and select “Open Attribute table”, 
+➢ Arrange the table in descending order based on the value of “ELEV” column.
+➢ Make a copy of Contour Layer, Go to Layer →Save As
+➢ Select file format as “Keyhole Markup Language”, set file name, location and Layer Name.
+➢ Also set CRS to WGS 84 EPSG:4326
+➢ Go to the stored location on Hard Disk and open the “Himalayan_Google_Map_File.kml” with 
+Google Map.
+
+➢ For Hill Shade surface analysis
+➢ Go to Plugin → Install Georeferencer GADL.
+➢ After successful installation of plugin Go to Raster → Analysis → Hill Shade
+➢ Select the input raster layer, select file name and location for storing Hill Shade output file. 
+➢ Press “RUN” and Close the Hill Shape Dialog window
