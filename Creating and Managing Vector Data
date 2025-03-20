@@ -1,0 +1,44 @@
+a) Adding vector layer
+b) Setting properties
+c) Vector Layer Formatting
+
+Add the following layers and create areas accordingly 
+Creating Polygon vector layer
+➢ Select Project→New
+Select Layer→Create Layer→New Shapefile Layer
+Adding vector layers (Polygon, Line, Points)
+➢ Polygon layers (We have taken 2 layers Matunga, Garden)
+➢ Line layers (We have taken 3 layers Small_Roads, Road, Flyover) 
+➢ Point layers (We have taken 4 layers bank,college,Restaurants,ATM
+
+//To merge roads 
+• Go to properties of road then select symbology. Click on Advanced button select 
+Symbol level
+Check Enable symbol levels option
+Click ok 
+
+//d) Calculating line lengths and statistics
+➢ Go to Layer → Add Layer → Add Vector Layer
+➢ Add the following file to project
+"\GIS_Workshop\Practicals\Practical_01\D\DATA\IND_rrd\IND_rails.shp"
+Press “ADD”
+➢ Also add India Administrative Map
+“GIS_Workshop\Practicals\Practical_01\D\DATA\IND_adm\IND_adm0.shp”
+➢ Double Click on IND_adm0
+Select → Select any outline style from below given options
+Press OK
+In Layer Pane, Right click on IND_rails → Open Attribute Table
+➢ Press Toggle Editing button using button, on Attribute table window toolbar
+Press Open Field Calculator using button.
+➢ Set the output field as “Track_Len”, field type to “Decimal Number”
+search $length or go to Geometry → Select $length
+set expression as $length/1000
+Press OK
+➢ Press CTRL+S or click on Save Edits option on tool bar 
+➢ Close the attribute table window.
+➢ For calculating the total length of Railway tracks in India.
+➢ Select Vector→ Analysis Tools→ Basic Statics for Fields
+➢ Select IND_rails layer from input layer. And select Track_Len in “Field to Calculate statistics 
+on
+➢ Press RUN
+Open the “output.html” file to get the field statistics.
