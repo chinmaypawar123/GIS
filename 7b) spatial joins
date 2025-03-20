@@ -1,0 +1,7 @@
+➢ Go to Layer → Add Layer → Add Vector Layer → Select 
+“I:\GIS_Workshop\Practicals\Practical_07\B\Data\nybb_12c\nybb_13c_av\nybb.shp” and
+“I:\GIS_Workshop\Practicals\Practical_07\B\Data\OEM_NursingHomes_001\OEM_NursingHo
+mes_001.shp”, from data folder.
+➢ Go to attribute table and observe the data.
+➢ Go to Vector → Data Management Tools → Join Attributes by Location
+➢ Use the Identify Feature "i" Button to select a region to view join data on map Layer. 
